@@ -1,0 +1,8 @@
+{
+  "directory": "3p",
+  "scripts": {
+    "preinstall": "bower prune"
+  },
+  "analytics": false,
+  "interactive": false
+}

@@ -1,0 +1,53 @@
+#
+# Copyright 2016 PhenixP2P Inc. Confidential and Proprietary. All rights reserved.
+verbose: false
+instrumentation:
+    root: .
+    default-excludes: true
+    excludes: []
+    embed-source: false
+    variable: __coverage__
+    compact: true
+    preserve-comments: false
+    complete-copy: false
+    save-baseline: false
+    baseline-file: ./coverage/coverage-baseline.json
+    include-all-sources: false
+reporting:
+    print: summary
+    reports:
+        - lcov
+        - html
+        - teamcity
+    dir: ./coverage
+    watermarks:
+        statements: [50, 80]
+        lines: [50, 80]
+        functions: [50, 80]
+        branches: [50, 80]
+    report-config:
+        clover: {file: clover.xml}
+        cobertura: {file: cobertura-coverage.xml}
+        json: {file: coverage-final.json}
+        json-summary: {file: coverage-summary.json}
+        lcovonly: {file: lcov.info}
+        teamcity: {file: null}
+        text: {file: null, maxCols: 0}
+        text-summary: {file: null}
+hooks:
+    hook-run-in-context: true
+    post-require-hook: null
+    handle-sigint: false
+check:
+    global:
+        statements: 25 
+        lines: 25
+        branches: 15
+        functions: 10
+        excludes: []
+    each:
+        statements: 0
+        lines: 0
+        branches: 0
+        functions: 0
+        excludes: []
