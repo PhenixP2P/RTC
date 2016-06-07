@@ -3,11 +3,6 @@
  */
 
 var browsers = [ 'Chrome' ];
-var isOSX = /^darwin/.test(process.platform);
-
-if (isOSX) {
-    browsers.push('Safari');
-}
 
 module.exports = function (config) {
     config.set({
