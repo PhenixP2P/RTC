@@ -42,7 +42,7 @@
   "devDependencies": {
     "bluebird": "3.5.0",
     "body-parser": "1.18.1",
-    "bower": "1.8.0",
+    "bower": "1.8.8",
     "bowser": "1.7.1",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chai": "4.1.0",
